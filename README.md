@@ -19,6 +19,17 @@ For fun, for history's sake, for archaeology, for science! Or maybe you want to 
 
 # How to use this image
 
+## Run a vintage Python REPL
+
+```
+$ docker run -it dustingram/vintage-python:1.0.1
+Python 1.0.1 (Feb 23 2019)
+Copyright 1991-1994 Stichting Mathematisch Centrum, Amsterdam
+>>> print "Hello world!"
+Hello world!
+>>>
+```
+
 ## Create a `Dockerfile` in your Python app project
 
 ```
