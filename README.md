@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`1.3` (*1.3/Dockerfile*)](https://github.com/di/vintage-python/blob/6115a011bf1d449d4404b0c41c4002f9f77af4ba/1.3/Dockerfile)
+- [`1.0.1` (*1.0.1/Dockerfile*)](https://github.com/di/vintage-python/blob/master/1.0.1/Dockerfile)
+- [`1.3` (*1.3/Dockerfile*)](https://github.com/di/vintage-python/blob/master/1.3/Dockerfile)
 
 # What is this?
 
@@ -21,7 +22,7 @@ For fun, for history's sake, for archaeology, for science! Or maybe you want to 
 ## Create a `Dockerfile` in your Python app project
 
 ```
-FROM dustingram/vintage-python:1.3
+FROM dustingram/vintage-python:1.0.1
 
 WORKDIR /tmp
 
@@ -39,7 +40,7 @@ Sending build context to Docker daemon  2.048kB
 Successfully tagged my-vintage-python-app:latest
 
 $ docker run -it --rm my-vintage-python-app
-Python: 1.3 (Feb 22 2019)  [GCC 7.3.0]
+Python: 1.0.1 (Feb 23 2019)
 ```
 
 (The date here is when the image was built, not when the source was published)
