@@ -1,0 +1,49 @@
+--- Modules/Setup.in
++++ Modules/Setup.in
+@@ -108,7 +108,7 @@
+ fcntl fcntlmodule.c	# fcntl(2) and ioctl(2)
+ pwd pwdmodule.c		# pwd(3)
+ grp grpmodule.c		# grp(3)
+-crypt cryptmodule.c # -lcrypt	# crypt(3); needs -lcrypt on some systems
++crypt cryptmodule.c -lcrypt	# crypt(3); needs -lcrypt on some systems
+ select selectmodule.c	# select(2); not on ancient System V
+ socket socketmodule.c	# socket(2); not on ancient System V
+
+--- Objects/fileobject.c
++++ Objects/fileobject.c
+@@ -410,7 +410,7 @@
+ */
+
+ static object *
+-getline(f, n)
++mygetline(f, n)
+ 	fileobject *f;
+ 	int n;
+ {
+@@ -531,7 +531,7 @@
+ 	}
+ 	if (((fileobject*)f)->f_fp == NULL)
+ 		return err_closed();
+-	return getline((fileobject *)f, n);
++	return mygetline((fileobject *)f, n);
+ }
+
+ /* Python method */
+@@ -556,7 +556,7 @@
+ 		}
+ 	}
+
+-	return getline(f, n);
++	return mygetline(f, n);
+ }
+
+ static object *
+@@ -574,7 +574,7 @@
+ 	if ((list = newlistobject(0)) == NULL)
+ 		return NULL;
+ 	for (;;) {
+-		line = getline(f, 0);
++		line = mygetline(f, 0);
+ 		if (line != NULL && getstringsize(line) == 0) {
+ 			DECREF(line);
+ 			break;

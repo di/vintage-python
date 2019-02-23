@@ -2,6 +2,7 @@
 
 - [`1.0.1` (*1.0.1/Dockerfile*)](https://github.com/di/vintage-python/blob/master/1.0.1/Dockerfile)
 - [`1.1` (*1.1/Dockerfile*)](https://github.com/di/vintage-python/blob/master/1.1/Dockerfile)
+- [`1.2` (*1.2/Dockerfile*)](https://github.com/di/vintage-python/blob/master/1.2/Dockerfile)
 - [`1.3` (*1.3/Dockerfile*)](https://github.com/di/vintage-python/blob/master/1.3/Dockerfile)
 
 # What is this?
