@@ -1,5 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
+- [`0.9.1` (*0.9.1/Dockerfile*)](https://github.com/di/vintage-python/blob/master/0.9.1/Dockerfile)
 - [`1.0.1` (*1.0.1/Dockerfile*)](https://github.com/di/vintage-python/blob/master/1.0.1/Dockerfile)
 - [`1.1` (*1.1/Dockerfile*)](https://github.com/di/vintage-python/blob/master/1.1/Dockerfile)
 - [`1.2` (*1.2/Dockerfile*)](https://github.com/di/vintage-python/blob/master/1.2/Dockerfile)
@@ -12,6 +13,7 @@ The official [Python Releases](https://www.python.org/downloads/) page lists rec
 But wait, there's more! Also available are [various source
 releases](https://legacy.python.org/download/releases/src/) for versions that
 go back even farther, back to Python 1.0.1, released Feb 15th, 1994.
+Additionally, 0.9.1 has been provided here: https://github.com/smontanaro/python-0.9.1
 
 These base images make it easier to run the more "vintage" Python versions, directly from the comfort of your modern environment.
 
